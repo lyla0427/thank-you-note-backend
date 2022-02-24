@@ -1,9 +1,10 @@
 class Robot:
     """
-    메롱
+    namespace : 개체를 구분할 수 있는 범위,
+    A namespace is a declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc) inside it. Namespaces are used to organize code into logical groups and to prevent name collisions that can occur especially when your code base includes multiple libraries.
+    클래스 변수 : 인스턴스끼리 공유하는 변수
     """
 
-    # 클래스 변수 : 인스턴스끼리 공유하는 변수
     population = 0
 
     def __init__(self, name, serial_num, *num):
@@ -39,3 +40,4 @@ print(Robot.how_many())
 print(dir(Jarvis))
 print(Robot.__doc__)
 print(Jarvis.__class__)
+print(Robot.__dict__)
